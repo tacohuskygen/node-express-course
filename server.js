@@ -19,9 +19,16 @@ app.get('/users', function(req, res){
 app.get('/users/:id', function(req, res){
     console.log(req.params.id);
     res.json({
-        uccess: true,
+        success: true,
         message: "got one user",
         users: req.params.id
+    })
+})
+
+app.get('/lol', function(req, res){
+    res.json({
+        success: true,
+        message: "entered lol endpoint"
     })
 })
 
